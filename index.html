@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crypto Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-container">
+        <a href="index.html" class="navbar-title">Crypto Tracker</a>
+        <input
+          type="text"
+          id="search"
+          class="navbar-search"
+          placeholder="Search a coin ..."
+        />
+        <a href="favorites.html" class="navbar-favorites">Favorites</a>
+      </div>
+    </nav>
+    <div id="app">
+        <table id="crypto-table">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Coins</th>
+                    <th>Price</th>
+                    <th>24h Change</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="crypto-list"></tbody>
+        </table>
+      <div id="pagination"></div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,220 @@
+body {
+  font-family: "Space Mono", monospace;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.navbar {
+  background-color: #333;
+  color: #fff;
+  padding: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar-title {
+  font-size: 1.5rem;
+  margin-right: 2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+}
+.navbar-search {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  width: 250px;
+}
+.navbar-favorites {
+  margin-left: 2rem;
+  text-decoration: none;
+  color: #fff;
+  background-color: #007bff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+#app {
+  padding: 2rem;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-color: rgb(239, 239, 239);
+}
+thead {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+}
+th,
+td {
+  padding: 0.75rem;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+.crypto-item:hover {
+  background-color: #e1e0e0;
+  cursor: pointer;
+}
+button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #0056b3;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  list-style: none;
+  padding: 0;
+}
+.page-item {
+  margin: 0 5px;
+}
+.page-item a {
+  color: #007bff;
+  text-decoration: none;
+  padding: 8px 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+.page-item.active a {
+  font-weight: bold;
+  background-color: #007bff;
+  color: white;
+  border: 1px solid #007bff;
+}
+.page-item a:hover {
+  background-color: #ddd;
+}
+button.add {
+  background-color: #007bff;
+  color: #fff;
+}
+button.add:hover {
+  background-color: #0056b3;
+}
+button.remove {
+  background-color: #dc3545;
+  color: #fff;
+}
+button.remove:hover {
+  background-color: #c82333;
+}
+.coin-details {
+  text-align: center;
+  padding: 20px;
+}
+.coin-detail-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f2f2f2ff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+.coin-detail-item img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.coin-detail-item h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+.info-item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.info-label {
+  text-align: center;
+  font-weight: bold;
+}
+.info-value {
+  text-align: center;
+  color: #666;
+}
+.coin-info {
+  border: 2px solid #666;
+  padding: 0.5rem;
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 20px;
+  background-color: rgb(239, 239, 239);
+}
+.coin-detail-item p {
+  width: 80%;
+  margin: 5px;
+  color: #666;
+}
+@media (max-width: 500px) {
+  .coin-container {
+    width: 90%;
+  }
+}
+h1 {
+  color: #333;
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+.favoritesCrypto-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.favoritesCrypto-item {
+  background-color: rgb(239, 239, 239);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.favoritesCrypto-item img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.favoritesCrypto-item h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+.favoritesCrypto-item p {
+  color: #666;
+}
+.favoritesCrypto-item button {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.favoritesCrypto-item button:hover {
+  background-color: #c82333;
+}
+
+#pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  list-style: none;
+  padding: 0;
+  position: sticky;
+  bottom: 20px;
+}
